@@ -11,9 +11,24 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+@media only screen and (max-width: 600px) {
+    body{
+        transform: rotate(90deg);
+        /* height: 200px;
+        width: 80%; */
+        transition: all 1s linear;
+    }
+    .back{
+        /* width: 1.5%;
+        height: 206px; */
+        background-color: red;
+        /* position: relative;
+        border-radius: 80% 0% 0% 80%; */
+    } 
+}
 
 #container{
-    width: 40%;
+    width: 500px;
     height: 200px;
     border: 3px solid grey;
     display: flex;
@@ -32,8 +47,8 @@ body{
     flex-direction: column-reverse;
 }
 .place{
-    width: 30px;
-    height: 30px;
+    width: 7%;
+    height: 35%;
     background-color: indianred;
     font-size: 14px;
     font-weight: bold;
@@ -46,7 +61,7 @@ body{
     cursor: pointer;
 }
 .place:hover{
-    opacity: 0.9;
+    opacity: 0.8;
 }
 .place:active{
     opacity: 1;
